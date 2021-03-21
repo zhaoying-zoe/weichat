@@ -1,5 +1,5 @@
 // pages/index/index.js
-const util = require("../../api/request.js");
+const util = require("../../api/index");
 Page({
   /**
    * 页面的初始数据
@@ -53,14 +53,23 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    util.request('/index/advertising', 'get', { limit: 3 }, res => {
+  onLoad: function () {
+    util.getRequest({
+      url:'/index/advertising',
+      data:{
+        limit: 3,
+      },
+      method:'GET',
+    })
+    .then((res) => {
+      let swipers = res.data.data;
+      console.log(res.data.data);
       this.setData({
-        swipers: res.data.data
+        swipers
       })
-    }, err => {
-      // wx.hideNavigationBarLoading();
-      console.log(err);
+    })
+    .then((error) => {
+      console.log(error);
     })
   },
 

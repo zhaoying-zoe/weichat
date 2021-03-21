@@ -1,0 +1,9 @@
+<!--pages/swiper/swiper.wxml-->
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper-item>
+    111
+  </swiper-item>
+  <swiper-item>111</swiper-item>
+  <swiper-item>111</swiper-item>
+</swiper>

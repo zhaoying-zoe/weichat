@@ -1,0 +1,63 @@
+<!--pages/index/index.wxml-->
+<view class="home">
+  <!-- 轮播图 -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" circular="{{circular}}">
+    <swiper-item wx:for="{{swipers}}" wx:for-item="item" wx:key="key">
+      <image src="{{item.src}}"></image>
+    </swiper-item>
+  </swiper>
+  <!-- body部分 -->
+  <view class="home-body">
+    <!-- 地址 -->
+    <view class="body-address">
+      <view class="address-near">
+        <view class="near-icon">
+          <image src="../../static/address/dizhi.png"></image>
+        </view>
+        <text class="near-text">附近门店:无锡小钱书门店 | 100m</text>
+      </view>
+      <view class="address-more">
+        <view class="more-shop">
+          更多门店
+        </view>
+        <view class="more-icon">
+          >
+        </view>
+      </view>
+    </view>
+    <!-- 左右 -->
+    <view class="bady-lr">
+      <view class="lr" wx:for="{{leftRight}}" wx:for-item="item" wx:key="index">
+        <view class="lr-title">
+          {{item.title}}
+        </view>
+        <view class="lr-desc">
+          {{item.desc}}
+        </view>
+        <view class="lr-tip">
+          {{item.tip}}
+        </view>
+        <view class="lr-img">
+          <image src="{{item.src}}"></image>
+        </view>
+      </view>
+    </view>
+    <!-- icon分类列表 -->
+    <view class="icon-category">
+      <view class="icons" wx:for="{{iconCategoyies}}" wx:for-item="item" wx:key="index">
+        <view class="icon-img">
+          <image src="{{item.src}}"></image>
+        </view>
+        <view class="icon-text">
+          {{item.text}}
+        </view>
+      </view>
+    </view>
+    <!-- 为你推荐 -->
+    <view class="recommend">
+    — <text class="recommend-title">
+      为你推荐
+      </text> —
+    </view>
+  </view>
+</view>

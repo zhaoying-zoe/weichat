@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/swiper/swiper",
+    "pages/logs/logs",
+    "pages/cart/cart",
+    "pages/shop/shop",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "小钱书",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#fcad2a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "iconPath": "static/tabbar/shop.png",
+        "selectedIconPath": "static/tabbar/shop-s.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/tabbar/cart.png",
+        "selectedIconPath": "static/tabbar/cart-s.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "static/tabbar/me.png",
+        "selectedIconPath": "static/tabbar/me-s.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
+

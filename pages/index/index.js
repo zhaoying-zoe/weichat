@@ -63,12 +63,11 @@ Page({
     })
     .then((res) => {
       let swipers = res.data.data;
-      console.log(res.data.data);
       this.setData({
         swipers
       })
     })
-    .then((error) => {
+    .catch((error) => {
       console.log(error);
     })
   },

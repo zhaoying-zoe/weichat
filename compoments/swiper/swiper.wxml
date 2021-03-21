@@ -1,0 +1,7 @@
+<!--compoments/swiper/swiper.wxml-->
+<!-- 轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" circular="{{circular}}">
+  <swiper-item wx:for="{{swipers}}" wx:for-item="item" wx:key="key">
+    <image src="{{item.src}}"></image>
+  </swiper-item>
+</swiper>

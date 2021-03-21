@@ -1,6 +1,0 @@
-/* pages/swiper/swiper.wxss */
-swiper{
-  margin-top: 40rpx;
-  width: 100%;
-  height: 250rpx;
-}

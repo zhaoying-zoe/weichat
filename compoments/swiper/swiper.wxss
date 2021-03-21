@@ -1,0 +1,11 @@
+/* compoments/swiper/swiper.wxss */
+
+/* 轮播图样式 */
+swiper{
+  width: 100%;
+  height: 250rpx;
+}
+swiper-item image{
+  width: 100%;
+  height: 100%;
+}

@@ -1,11 +1,7 @@
 <!--pages/index/index.wxml-->
 <view class="home">
-  <!-- 轮播图 -->
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" circular="{{circular}}">
-    <swiper-item wx:for="{{swipers}}" wx:for-item="item" wx:key="key">
-      <image src="{{item.src}}"></image>
-    </swiper-item>
-  </swiper>
+  <!-- 使用轮播图组件 父组件给子组件传值 -->
+  <Swiper swipers="{{swipers}}" fn="1234"></Swiper>
   <!-- body部分 -->
   <view class="home-body">
     <!-- 地址 -->
